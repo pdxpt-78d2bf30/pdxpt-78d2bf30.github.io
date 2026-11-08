@@ -1,0 +1,1606 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱情岛aqdlt-情感故事_恋爱指南_关系经营</title>
+  <meta name="description" content="爱情岛aqdlt提供情感故事、恋爱指南与关系经营内容，适合正在寻找亲密关系建议、想了解不同恋爱模式或需要情感陪伴的读者阅读。">
+  <meta name="keywords" content="情感故事,恋爱指南,亲密关系,关系经营,情感陪伴">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f7d6e0'/%3E%3Cpath d='M16 24c-4-3-8-6-8-10 0-3 2-5 5-5 1.5 0 3 1 3 1s1.5-1 3-1c3 0 5 2 5 5 0 4-4 7-8 10z' fill='%23d44a6a'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    /* ---------- 全局变量与重置 ---------- */
+    :root {
+      --color-primary: #b6425b;
+      --color-primary-light: #fcedf0;
+      --color-primary-soft: #f5d7dd;
+      --color-secondary: #7a4e5e;
+      --color-bg: #fdf8f7;
+      --color-surface: #ffffff;
+      --color-text: #2e1e23;
+      --color-text-muted: #6b5158;
+      --color-border: #e6d7da;
+      --color-accent: #d97a8c;
+      --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      --font-serif: "Songti SC", "Noto Serif SC", Georgia, serif;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(120, 60, 70, 0.06);
+      --shadow-md: 0 6px 20px rgba(120, 60, 70, 0.08);
+      --max-width: 1320px;
+      --sticky-height: 96px; /* 公告条+页头高度预留 */
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--sticky-height);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-top: 0;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    /* ---------- 吸顶容器 ---------- */
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* 公告条 */
+    .announcement-bar {
+      background: var(--color-primary);
+      color: #fff;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 0.875rem;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .announcement-bar a {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* 页头 */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 12px 24px;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    .brand-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .header-nav a {
+      color: var(--color-text);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .header-nav a:hover {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .header-extra {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-mini {
+      display: flex;
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--color-bg);
+    }
+
+    .search-mini input {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      font-size: 0.875rem;
+      width: 150px;
+      color: var(--color-text);
+    }
+
+    .search-mini input:focus {
+      outline: none;
+    }
+
+    .search-mini button {
+      padding: 6px 14px;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.875rem;
+      border-radius: 0 24px 24px 0;
+    }
+
+    /* ---------- 首屏 ---------- */
+    .hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 24px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      width: fit-content;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--color-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      max-width: 480px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+      padding: 10px 28px;
+      border-radius: 32px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #9e3650;
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      border: 1.5px solid var(--color-primary);
+      color: var(--color-primary);
+      padding: 10px 28px;
+      border-radius: 32px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: var(--color-primary-light);
+      text-decoration: none;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-visual svg {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+    }
+
+    /* ---------- 三栏主内容区 ---------- */
+    .main-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px 48px;
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 240px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* 左栏 */
+    .sidebar-left {
+      position: sticky;
+      top: calc(var(--sticky-height) + 16px);
+      align-self: start;
+    }
+
+    .channel-nav {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 20px 12px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    .channel-nav h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+      margin-bottom: 12px;
+      padding-left: 8px;
+    }
+
+    .channel-nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-nav a {
+      display: block;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--color-text);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+
+    .channel-nav a:hover {
+      background: var(--color-primary-light);
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .filter-group {
+      margin-top: 20px;
+    }
+
+    .filter-group h3 {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin-bottom: 8px;
+      padding-left: 8px;
+    }
+
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 0 8px;
+    }
+
+    .filter-tag {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 16px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .filter-tag:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    .filter-tag.active {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+
+    /* 中栏 */
+    .content-main {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      min-width: 0;
+    }
+
+    .section-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 28px 28px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      background: var(--color-primary);
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+    }
+
+    /* 简介 */
+    .intro-text p {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      line-height: 1.75;
+    }
+
+    /* 热门卡片 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .hot-card {
+      background: var(--color-bg);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      border: 1px solid transparent;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .hot-card:hover {
+      border-color: var(--color-primary-soft);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hot-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--color-text);
+    }
+
+    .hot-card .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      background: var(--color-primary-light);
+      color: var(--color-primary);
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+
+    .hot-card .excerpt {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .hot-card .meta {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .update-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--color-border);
+      gap: 16px;
+    }
+
+    .update-item:last-child {
+      border-bottom: none;
+    }
+
+    .update-item .name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      white-space: nowrap;
+    }
+
+    .update-item .summary {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      text-align: right;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .category-item {
+      background: var(--color-bg);
+      padding: 14px 8px;
+      text-align: center;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text);
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+
+    .category-item:hover {
+      background: var(--color-primary-light);
+      color: var(--color-primary);
+    }
+
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 20px 0 8px;
+      color: var(--color-primary);
+    }
+
+    .deep-dive p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 8px;
+      color: var(--color-text);
+    }
+
+    .deep-dive ul {
+      margin: 8px 0 12px 20px;
+      list-style: disc;
+    }
+
+    .deep-dive li {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--color-text);
+      margin-bottom: 4px;
+    }
+
+    /* 体验指南 */
+    .guide-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .guide-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-item summary {
+      padding: 12px 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: var(--color-text);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.2rem;
+      color: var(--color-primary);
+      font-weight: 400;
+    }
+
+    .faq-item[open] summary::after {
+      content: '−';
+    }
+
+    .faq-answer {
+      padding: 0 0 14px 0;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* 评论 */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 420px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .comment-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .comment-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-weight: 700;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .comment-content {
+      flex: 1;
+    }
+
+    .comment-nick {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--color-text);
+    }
+
+    .comment-text {
+      font-size: 0.87rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+
+    /* 相关资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .news-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .news-item .news-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text);
+    }
+
+    .news-item .news-meta {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+    }
+
+    .news-item .news-summary {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+
+    /* 相关推荐标签 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .rec-tag {
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      color: var(--color-text);
+      transition: all 0.15s;
+    }
+
+    .rec-tag:hover {
+      background: var(--color-primary-light);
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    /* 时间线 */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: var(--color-primary-soft);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 20px 16px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      border: 2px solid var(--color-surface);
+      box-shadow: 0 0 0 2px var(--color-primary-soft);
+    }
+
+    .timeline-item .tl-date {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-bottom: 2px;
+    }
+
+    .timeline-item .tl-text {
+      font-size: 0.9rem;
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    /* 右栏 */
+    .sidebar-right {
+      position: sticky;
+      top: calc(var(--sticky-height) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .side-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      padding: 18px 16px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    .side-card h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .toc-list a {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      padding: 4px 0;
+      display: block;
+      border-left: 2px solid transparent;
+      padding-left: 8px;
+      transition: all 0.15s;
+    }
+
+    .toc-list a:hover {
+      color: var(--color-primary);
+      border-left-color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .hot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .hot-list-item {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      font-size: 0.85rem;
+    }
+
+    .hot-list-num {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 0.8rem;
+      min-width: 18px;
+    }
+
+    .hot-list-item a {
+      color: var(--color-text);
+    }
+
+    .hot-list-item a:hover {
+      color: var(--color-primary);
+    }
+
+    .extend-links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .extend-links a {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      padding: 4px 0;
+      border-bottom: 1px dashed var(--color-border);
+    }
+
+    .extend-links a:last-child {
+      border-bottom: none;
+    }
+
+    .extend-links a:hover {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    /* 页尾 */
+    .site-footer {
+      background: #2e1e23;
+      color: #d9c8cc;
+      padding: 36px 24px 24px;
+      margin-top: 16px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .footer-brand {
+      max-width: 320px;
+    }
+
+    .footer-brand .brand-text {
+      color: #f5d7dd;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #b9a0a6;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #f5d7dd;
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 0.85rem;
+      color: #b9a0a6;
+      padding: 3px 0;
+    }
+
+    .footer-col a:hover {
+      color: #f5d7dd;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #4a343a;
+      padding-top: 16px;
+      font-size: 0.78rem;
+      color: #8e747b;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 1024px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar-left,
+      .sidebar-right {
+        position: static;
+      }
+      .sidebar-left {
+        order: -1;
+      }
+      .channel-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px;
+      }
+      .channel-nav h2 {
+        display: none;
+      }
+      .channel-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .filter-group {
+        margin-top: 0;
+      }
+      .sidebar-right {
+        order: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero-desc {
+        margin: 0 auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-visual {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .announcement-bar {
+        font-size: 0.75rem;
+        white-space: normal;
+        line-height: 1.4;
+      }
+      .site-header {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 16px;
+      }
+      .header-nav {
+        gap: 12px;
+        font-size: 0.82rem;
+        flex-wrap: wrap;
+      }
+      .search-mini input {
+        width: 100px;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .sidebar-right {
+        grid-template-columns: 1fr;
+      }
+      .main-container {
+        padding: 0 16px 32px;
+      }
+      .section-card {
+        padding: 20px 16px;
+      }
+      .footer-links {
+        gap: 24px;
+      }
+    }
+
+    .no-results {
+      display: none;
+      padding: 16px;
+      text-align: center;
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 吸顶区域：公告条 + 页头 -->
+  <div class="sticky-wrap">
+    <div class="announcement-bar" role="status">
+      🌸 本周新上架「亲密关系沟通课」与「异地恋经营手册」 · <a href="/#latest">查看更新</a>
+    </div>
+    <header class="site-header">
+      <div class="brand">
+        <svg class="brand-logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" fill="#fcedf0"/>
+          <path d="M20 30c-5-3.5-10-7-10-12 0-3.5 2.5-6 6-6 2 0 3.5 1 4 2 0.5-1 2-2 4-2 3.5 0 6 2.5 6 6 0 5-5 8.5-10 12z" fill="#b6425b"/>
+          <circle cx="14" cy="17" r="1.5" fill="#fff"/>
+          <circle cx="26" cy="17" r="1.5" fill="#fff"/>
+        </svg>
+        <span class="brand-text">爱情岛aqdlt</span>
+      </div>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#intro">内容简介</a>
+        <a href="/#hot">热门推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#categories">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">常见问答</a>
+      </nav>
+      <div class="header-extra">
+        <div class="search-mini">
+          <input type="search" id="searchInput" placeholder="搜索情感话题..." aria-label="站内搜索">
+          <button id="searchBtn" aria-label="搜索">🔍</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <span class="hero-badge">情感故事 · 恋爱指南 · 关系经营</span>
+      <h1 id="hero-heading">爱情岛aqdlt</h1>
+      <p class="hero-desc">从心动到长久，我们整理了情感故事、恋爱指南与关系经营方法，帮助你在亲密关系中更从容地表达与选择。每天更新情感话题与实用建议。</p>
+      <div class="hero-actions">
+        <a href="/#hot" class="btn-primary">浏览热门故事</a>
+        <a href="/#intro" class="btn-outline">了解内容方向</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="320" rx="24" fill="#fcedf0"/>
+        <path d="M200 230c-30-20-60-40-60-70 0-20 15-35 35-35 12 0 21 6 25 12 4-6 13-12 25-12 20 0 35 15 35 35 0 30-30 50-60 70z" fill="#d44a6a" opacity="0.9"/>
+        <circle cx="140" cy="100" r="30" fill="#f5d7dd" opacity="0.7"/>
+        <circle cx="270" cy="80" r="20" fill="#f5d7dd" opacity="0.5"/>
+        <path d="M80 200c20-15 40-15 60 0" stroke="#b6425b" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+        <path d="M300 180c-15-10-30-10-45 0" stroke="#b6425b" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+        <rect x="150" y="240" width="100" height="6" rx="3" fill="#e6d7da"/>
+        <rect x="170" y="254" width="60" height="6" rx="3" fill="#e6d7da"/>
+        <circle cx="310" cy="240" r="14" fill="#fcedf0" stroke="#d44a6a" stroke-width="1.5"/>
+        <path d="M310 234v8m-4-4h8" stroke="#d44a6a" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 三栏主内容区 -->
+  <div class="main-container">
+
+    <!-- 左栏：频道导航 + 分类筛选 -->
+    <aside class="sidebar-left" aria-label="频道导航与分类筛选">
+      <nav class="channel-nav" id="channelNav">
+        <h2>频道</h2>
+        <ul>
+          <li><a href="/#intro">内容简介</a></li>
+          <li><a href="/#hot">热门内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#recommend">相关推荐</a></li>
+          <li><a href="/#timeline">情感时间线</a></li>
+        </ul>
+        <div class="filter-group">
+          <h3>按场景筛选</h3>
+          <div class="filter-tags" id="filterTags">
+            <button class="filter-tag active" data-filter="all">全部</button>
+            <button class="filter-tag" data-filter="恋爱">恋爱</button>
+            <button class="filter-tag" data-filter="婚姻">婚姻</button>
+            <button class="filter-tag" data-filter="异地">异地</button>
+            <button class="filter-tag" data-filter="沟通">沟通</button>
+            <button class="filter-tag" data-filter="分手">分手</button>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- 中栏：主内容 -->
+    <main class="content-main">
+
+      <!-- 1. 内容简介 -->
+      <section class="section-card" id="intro">
+        <h2 class="section-title">内容简介</h2>
+        <div class="intro-text">
+          <p>爱情岛aqdlt 是一个围绕亲密关系与情感生活展开的内容门户，为正在恋爱、准备进入关系或希望经营长期伴侣的读者提供可参考的故事、方法与观察。我们相信好的关系需要理解与练习，因此内容覆盖从初识心动到长久陪伴的多个阶段。</p>
+          <p>在这里，你可以读到都市恋爱故事、异地恋经营实录、婚姻沟通案例，也能找到关于「如何开口谈需求」「怎样处理冷战」「分手后如何重建」等具体场景的讨论。内容以叙事和实用建议为主，不追求速成话术，更关注关系中的真实感受与长期变化。</p>
+          <p>如果你正在寻找情感故事来获得共鸣，或者需要恋爱指南来梳理思路，爱情岛aqdlt 的分类与标签可以帮助你快速定位。我们按恋爱阶段、关系类型和沟通场景组织内容，方便你在通勤、睡前或周末慢慢翻阅。</p>
+          <p>编辑团队会定期整理用户提问和真实案例（已做匿名处理），结合心理学常识与生活经验给出多角度参考。所有内容均为示例或虚构创作，仅用于展示情感话题的讨论方式。</p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="section-card" id="hot">
+        <h2 class="section-title">热门内容推荐</h2>
+        <p class="section-subtitle">近期读者关注较多的情感故事与指南</p>
+        <div class="card-grid" id="hotCardGrid">
+          <article class="hot-card" data-category="恋爱">
+            <h3>第一次约会后如何自然推进关系</h3>
+            <div class="tags"><span class="tag">恋爱初期</span><span class="tag">约会节奏</span><span class="tag">沟通</span></div>
+            <p class="excerpt">从约会结束后的消息频率到第二次见面的邀约方式，拆解自然推进关系的关键节点与常见误区。</p>
+            <div class="meta"><span>🔥 2.4k 阅读</span><span>更新 03-12</span></div>
+          </article>
+          <article class="hot-card" data-category="异地">
+            <h3>异地恋每天联系多久算合适</h3>
+            <div class="tags"><span class="tag">异地恋</span><span class="tag">联系频率</span><span class="tag">安全感</span></div>
+            <p class="excerpt">联系频率不是越高越好，关键在质量与预期管理。分享三个异地情侣的日常安排与磨合经验。</p>
+            <div class="meta"><span>🔥 1.9k 阅读</span><span>更新 03-10</span></div>
+          </article>
+          <article class="hot-card" data-category="沟通">
+            <h3>吵架后先冷静还是先沟通</h3>
+            <div class="tags"><span class="tag">冲突处理</span><span class="tag">冷战</span><span class="tag">情绪</span></div>
+            <p class="excerpt">冲突后的黄金修复窗口因人而异，本文对比两种做法的适用条件与具体话术参考。</p>
+            <div class="meta"><span>🔥 1.7k 阅读</span><span>更新 03-08</span></div>
+          </article>
+          <article class="hot-card" data-category="婚姻">
+            <h3>婚后共同账户还是各管各的</h3>
+            <div class="tags"><span class="tag">婚姻理财</span><span class="tag">家庭财务</span><span class="tag">信任</span></div>
+            <p class="excerpt">三种家庭财务模式的实际体验与适用场景，帮助伴侣找到适合双方的金钱相处方式。</p>
+            <div class="meta"><span>🔥 1.5k 阅读</span><span>更新 03-05</span></div>
+          </article>
+          <article class="hot-card" data-category="分手">
+            <h3>分手后还能做朋友吗</h3>
+            <div class="tags"><span class="tag">分手修复</span><span class="tag">边界感</span><span class="tag">情绪疗愈</span></div>
+            <p class="excerpt">从情感边界与自我重建的角度，分析分手后保持联系的利弊与可行前提。</p>
+            <div class="meta"><span>🔥 1.3k 阅读</span><span>更新 03-02</span></div>
+          </article>
+          <article class="hot-card" data-category="恋爱">
+            <h3>如何判断对方是否认真交往</h3>
+            <div class="tags"><span class="tag">恋爱信号</span><span class="tag">关系确认</span><span class="tag">观察</span></div>
+            <p class="excerpt">不靠猜测，从行为一致性、未来规划和社交圈融入三个维度观察关系的认真程度。</p>
+            <div class="meta"><span>🔥 1.2k 阅读</span><span>更新 02-28</span></div>
+          </article>
+        </div>
+        <p class="no-results" id="hotNoResults">没有匹配的内容，试试其他筛选条件。</p>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section-card" id="latest">
+        <h2 class="section-title">最新更新</h2>
+        <div class="update-list">
+          <div class="update-item"><span class="name">「恋爱中的情绪价值」</span><span class="summary">如何提供情绪支持而不耗尽自己，三个边界练习。</span></div>
+          <div class="update-item"><span class="name">「异地恋见面规划表」</span><span class="summary">一次见面如何安排才能减少疲惫、增加亲密感。</span></div>
+          <div class="update-item"><span class="name">「婚姻里的非暴力沟通」</span><span class="summary">从指责到表达需求的四步转换实例。</span></div>
+          <div class="update-item"><span class="name">「暧昧期该不该主动」</span><span class="summary">主动的时机、方式与心理准备，附读者投票结果。</span></div>
+          <div class="update-item"><span class="name">「分手后的自我重建清单」</span><span class="summary">从日常生活秩序到社交节奏的恢复建议。</span></div>
+          <div class="update-item"><span class="name">「见家长前的沟通准备」</span><span class="summary">伴侣之间先对齐哪些问题，减少现场压力。</span></div>
+          <div class="update-item"><span class="name">「长期关系的新鲜感设计」</span><span class="summary">不是靠惊喜堆砌，而是建立共同体验的节奏。</span></div>
+          <div class="update-item"><span class="name">「如何开口谈婚论嫁」</span><span class="summary">从时机选择到具体话题的推进步骤与避雷点。</span></div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section-card" id="categories">
+        <h2 class="section-title">分类入口</h2>
+        <p class="section-subtitle">按你当前的关系阶段或关注话题查找</p>
+        <div class="category-grid">
+          <div class="category-item" data-category="恋爱">恋爱初期</div>
+          <div class="category-item" data-category="异地">异地恋经营</div>
+          <div class="category-item" data-category="沟通">冲突与沟通</div>
+          <div class="category-item" data-category="婚姻">婚姻日常</div>
+          <div class="category-item" data-category="分手">分手与修复</div>
+          <div class="category-item" data-category="恋爱">暧昧与确认</div>
+          <div class="category-item" data-category="婚姻">家庭财务</div>
+          <div class="category-item" data-category="沟通">情绪管理</div>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="section-card deep-dive" id="deep">
+        <h2 class="section-title">深度解析：亲密关系中的沟通与边界</h2>
+        <p>在情感话题的讨论中，「沟通」和「边界」是两个绕不开的词。但落到具体生活里，很多人依然不知道从何开口。爱情岛aqdlt 整理了读者最常遇到的几类场景，尝试给出可操作的参考路径。</p>
+
+        <h3>为什么“说出来”不等于“说清楚了”</h3>
+        <p>很多伴侣在冲突时会说“我已经表达过了”，但对方接收到的信息可能完全不同。原因在于表达往往夹带了情绪判断，比如“你总是不回消息”背后其实是“我需要确认你在意我”。把判断换成需求，是沟通的第一步。</p>
+        <p>可以尝试的句式是：当（具体事件）发生时，我感到（情绪），因为我需要（需求），我希望（具体请求）。这个结构不保证对方立刻配合，但能降低防御，让对话回到问题本身。</p>
+
+        <h3>边界不是推开对方，而是保护关系</h3>
+        <p>边界常被误解为冷漠或疏远。实际上，清晰的边界能让双方知道什么可以商量、什么需要尊重。比如“我周末上午需要独处时间”并不是拒绝陪伴，而是提前管理精力，避免在疲惫时爆发情绪。</p>
+        <ul>
+          <li>边界要具体：说清楚时间、行为和替代方案，而不是笼统的“我需要空间”。</li>
+          <li>边界要双向：在表达自己需求的同时，询问对方的边界在哪里。</li>
+          <li>边界可以调整：关系阶段变化时，重新确认彼此的舒适区。</li>
+        </ul>
+
+        <h3>冲突后的修复比避免冲突更重要</h3>
+        <p>没有不吵架的关系，区别在于吵完之后怎么收场。修复的关键动作包括：暂停情绪升级、承认自己的部分责任、提出一个小的具体行动。比如“刚才我声音太大了，对不起。我们能不能先各待二十分钟，再一起把这件事聊完？”</p>
+        <p>爱情岛aqdlt 的读者反馈中，很多人表示“先处理情绪再处理事情”是最有效的原则之一。这不是回避问题，而是给理性对话留出空间。当然，如果冲突涉及安全或尊严底线，则需要优先保护自己并寻求外部支持。</p>
+
+        <h3>长期关系中的“日常维护”</h3>
+        <p>比起偶尔的大惊喜，日常的小回应更能积累安全感。比如对方分享一件小事时放下手机听两分钟，出门前说一句具体的关心，这些动作不需要太多时间，但需要持续。关系经营不是完成任务，而是建立一种双方都舒服的互动节奏。</p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section-card" id="guide">
+        <h2 class="section-title">体验指南</h2>
+        <p class="section-subtitle">如何高效使用本站内容</p>
+        <div class="guide-steps">
+          <div class="guide-step"><span class="step-num">1</span><span class="step-text"><strong>按栏目浏览：</strong>左栏频道导航覆盖从故事到方法的各个板块，点击即可跳转到对应区域。</span></div>
+          <div class="guide-step"><span class="step-num">2</span><span class="step-text"><strong>用场景筛选：</strong>左栏“按场景筛选”可以过滤热门卡片，快速找到恋爱、婚姻、异地或沟通类内容。</span></div>
+          <div class="guide-step"><span class="step-num">3</span><span class="step-text"><strong>搜索关键词：</strong>页头搜索框支持本地内容查找，输入“异地”“吵架”等词即可定位相关卡片。</span></div>
+          <div class="guide-step"><span class="step-num">4</span><span class="step-text"><strong>移动端阅读：</strong>手机端频道导航会折叠为横向标签，主内容保持完整阅读宽度，侧栏内容移至正文之后。</span></div>
+          <div class="guide-step"><span class="step-num">5</span><span class="step-text"><strong>延伸阅读：</strong>每篇内容底部或右栏提供相关话题标签，可按兴趣继续探索。</span></div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section-card" id="faq">
+        <h2 class="section-title">常见问答</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>爱情岛aqdlt 的情感故事适合什么人看？</summary>
+            <div class="faq-answer">适合正在恋爱、准备进入关系或希望经营长期伴侣的读者。内容以叙事和实用建议为主，不要求心理学背景，可以当作日常参考或情感陪伴阅读。</div>
+          </details>
+          <details class="faq-item">
+            <summary>异地恋内容一般多久更新一次？</summary>
+            <div class="faq-answer">异地恋相关话题每周至少更新一篇，覆盖联系频率、见面规划、信任建立等具体场景。你可以关注“最新更新”板块或使用左栏筛选快速定位。</div>
+          </details>
+          <details class="faq-item">
+            <summary>恋爱初期和婚姻经营的内容有什么区别？</summary>
+            <div class="faq-answer">恋爱初期更关注关系确认、约会节奏和沟通试探；婚姻经营则更多涉及家庭分工、财务安排和长期冲突处理。分类入口对两者做了区分，方便按阶段查找。</div>
+          </details>
+          <details class="faq-item">
+            <summary>如何判断内容是否适合自己当前的关系阶段？</summary>
+            <div class="faq-answer">每张卡片都标注了类型标签，如“恋爱初期”“异地恋”“冲突处理”等。你可以先浏览标签，再决定是否深入阅读。热门推荐和分类入口也按阶段做了划分。</div>
+          </details>
+          <details class="faq-item">
+            <summary>站内搜索能找到哪些内容？</summary>
+            <div class="faq-answer">搜索框会匹配热门卡片和最新更新中的标题、标签与摘要文字，支持关键词如“异地”“沟通”“分手”。如果无结果，会提示更换关键词。</div>
+          </details>
+          <details class="faq-item">
+            <summary>为什么有些故事没有具体结局？</summary>
+            <div class="faq-answer">部分内容为示例或读者投稿的匿名整理，保留开放式讨论空间，方便读者结合自身经历思考。我们更关注过程中的选择与感受，而非唯一答案。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section-card" id="comments">
+        <h2 class="section-title">用户评论</h2>
+        <div class="comment-list">
+          <div class="comment-item"><div class="comment-avatar">林</div><div class="comment-content"><span class="comment-nick">林小满</span><p class="comment-text">异地恋那篇很实用，联系频率确实需要两个人商量着来。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">陈</div><div class="comment-content"><span class="comment-nick">陈屿</span><p class="comment-text">吵架后修复的步骤写得清楚，先冷静再沟通对我很有效。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">苏</div><div class="comment-content"><span class="comment-nick">苏晚</span><p class="comment-text">分类入口挺方便的，直接找到婚姻财务那一块。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">周</div><div class="comment-content"><span class="comment-nick">周周</span><p class="comment-text">故事有共鸣，不过有些篇幅偏短，希望多些细节。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">何</div><div class="comment-content"><span class="comment-nick">何遇</span><p class="comment-text">边界感那段说到点上了，以前总把边界当冷漠。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">沈</div><div class="comment-content"><span class="comment-nick">沈知</span><p class="comment-text">搜索功能好用，输入“分手”很快找到相关卡片。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">顾</div><div class="comment-content"><span class="comment-nick">顾念</span><p class="comment-text">希望多出一些长期关系维护的内容，比如日常仪式感。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">叶</div><div class="comment-content"><span class="comment-nick">叶青</span><p class="comment-text">FAQ 里关于结局的说明很坦诚，确实不是所有事都有标准答案。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">唐</div><div class="comment-content"><span class="comment-nick">唐糖</span><p class="comment-text">恋爱初期的内容对新手很友好，不会太有压力。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">许</div><div class="comment-content"><span class="comment-nick">许愿</span><p class="comment-text">页面在手机上读起来舒服，侧栏会收到下面，不碍事。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">孟</div><div class="comment-content"><span class="comment-nick">孟夏</span><p class="comment-text">深度解析部分可以再多一些具体对话示例就好了。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">韩</div><div class="comment-content"><span class="comment-nick">韩笑</span><p class="comment-text">整体节奏不错，故事和指南搭配着看不会太干。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">秦</div><div class="comment-content"><span class="comment-nick">秦川</span><p class="comment-text">第一次约会那篇的建议比较克制，没有教人套路。</p></div></div>
+          <div class="comment-item"><div class="comment-avatar">白</div><div class="comment-content"><span class="comment-nick">白露</span><p class="comment-text">希望能增加收藏功能，有些文章想反复看。</p></div></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section-card" id="news">
+        <h2 class="section-title">相关资讯</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-title">情感类内容消费趋势：读者更关注具体场景</span>
+            <span class="news-meta">2025-03-11 · 观察</span>
+            <p class="news-summary">从“如何脱单”到“如何沟通”，情感内容需求正在向具体关系场景迁移。</p>
+          </div>
+          <div class="news-item">
+            <span class="news-title">异地恋情侣的见面频率与满意度调查</span>
+            <span class="news-meta">2025-03-07 · 数据</span>
+            <p class="news-summary">一项小范围读者调查显示，提前规划见面比单纯增加联系时长更能提升安全感。</p>
+          </div>
+          <div class="news-item">
+            <span class="news-title">婚姻沟通工作坊在多个城市举办</span>
+            <span class="news-meta">2025-03-03 · 活动</span>
+            <p class="news-summary">以非暴力沟通为主题的线下活动受到年轻伴侣关注，练习重点在表达需求而非指责。</p>
+          </div>
+          <div class="news-item">
+            <span class="news-title">“边界感”成为亲密关系讨论高频词</span>
+            <span class="news-meta">2025-02-26 · 趋势</span>
+            <p class="news-summary">越来越多读者开始关注关系中的个人空间与情绪边界，相关文章阅读量上升。</p>
+          </div>
+          <div class="news-item">
+            <span class="news-title">分手后的自我重建：从日常秩序开始</span>
+            <span class="news-meta">2025-02-20 · 方法</span>
+            <p class="news-summary">心理工作者建议先恢复作息与社交节奏，再逐步处理复杂情绪。</p>
+          </div>
+          <div class="news-item">
+            <span class="news-title">恋爱初期约会频率与关系满意度关联</span>
+            <span class="news-meta">2025-02-14 · 观察</span>
+            <p class="news-summary">频率并非唯一因素，约会的质量与双方期待匹配度更影响初期体验。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section-card" id="recommend">
+        <h2 class="section-title">相关推荐</h2>
+        <p class="section-subtitle">按你感兴趣的具体方向继续探索</p>
+        <div class="rec-tags">
+          <a href="/#hot" class="rec-tag">恋爱初期约会节奏</a>
+          <a href="/#hot" class="rec-tag">异地恋联系频率</a>
+          <a href="/#hot" class="rec-tag">冲突后的修复话术</a>
+          <a href="/#deep" class="rec-tag">亲密关系边界感</a>
+          <a href="/#hot" class="rec-tag">婚姻财务安排</a>
+          <a href="/#hot" class="rec-tag">分手后情绪疗愈</a>
+          <a href="/#guide" class="rec-tag">见家长沟通准备</a>
+          <a href="/#deep" class="rec-tag">长期关系日常维护</a>
+        </div>
+      </section>
+
+      <!-- 11. 情感时间线 -->
+      <section class="section-card" id="timeline">
+        <h2 class="section-title">情感时间线</h2>
+        <p class="section-subtitle">关系不同阶段的关注重点参考</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-date">初识 — 暧昧期</div>
+            <div class="tl-text">观察互动节奏，确认双方意图，练习自然表达好感而不施加压力。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">确认关系 — 恋爱初期</div>
+            <div class="tl-text">建立沟通习惯，讨论联系频率与约会期待，逐步了解彼此边界。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">稳定交往 — 长期关系</div>
+            <div class="tl-text">面对日常摩擦与外部压力，学习冲突修复和共同规划。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">婚姻 — 家庭生活</div>
+            <div class="tl-text">财务安排、家庭分工与双方原生家庭关系的协调，需要持续对话。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">关系变化 — 分手或调整</div>
+            <div class="tl-text">尊重彼此决定，处理情绪与边界，必要时寻求外部支持。</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏：辅助阅读 -->
+    <aside class="sidebar-right" aria-label="辅助阅读入口">
+      <div class="side-card">
+        <h3>页内目录</h3>
+        <nav class="toc-list">
+          <a href="/#intro">内容简介</a>
+          <a href="/#hot">热门内容推荐</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#categories">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#recommend">相关推荐</a>
+          <a href="/#timeline">情感时间线</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <h3>热门条目</h3>
+        <div class="hot-list">
+          <div class="hot-list-item"><span class="hot-list-num">1</span><a href="/#hot">第一次约会后如何推进关系</a></div>
+          <div class="hot-list-item"><span class="hot-list-num">2</span><a href="/#hot">异地恋每天联系多久算合适</a></div>
+          <div class="hot-list-item"><span class="hot-list-num">3</span><a href="/#hot">吵架后先冷静还是先沟通</a></div>
+          <div class="hot-list-item"><span class="hot-list-num">4</span><a href="/#hot">婚后共同账户还是各管各的</a></div>
+          <div class="hot-list-item"><span class="hot-list-num">5</span><a href="/#hot">分手后还能做朋友吗</a></div>
+        </div>
+      </div>
+      <div class="side-card">
+        <h3>延伸阅读</h3>
+        <div class="extend-links">
+          <a href="/#deep">亲密关系中的沟通与边界</a>
+          <a href="/#guide">如何高效使用本站内容</a>
+          <a href="/#timeline">关系不同阶段的关注重点</a>
+          <a href="/#faq">异地恋内容更新频率</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-text">爱情岛aqdlt</div>
+          <p>聚焦亲密关系与情感生活的内容门户，提供情感故事、恋爱指南与关系经营参考。内容以叙事和实用建议为主，适合日常阅读与思考。</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>内容频道</h4>
+            <a href="/#intro">内容简介</a>
+            <a href="/#hot">热门推荐</a>
+            <a href="/#latest">最新更新</a>
+            <a href="/#deep">深度解析</a>
+          </div>
+          <div class="footer-col">
+            <h4>话题方向</h4>
+            <a href="/#categories">恋爱初期</a>
+            <a href="/#categories">异地恋经营</a>
+            <a href="/#categories">冲突与沟通</a>
+            <a href="/#categories">婚姻日常</a>
+          </div>
+          <div class="footer-col">
+            <h4>互动与帮助</h4>
+            <a href="/#faq">常见问答</a>
+            <a href="/#comments">用户评论</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#news">相关资讯</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 爱情岛aqdlt · 内容仅供阅读参考</span>
+        <span>部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // 搜索功能：匹配热门卡片与最新更新
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      const hotCards = document.querySelectorAll('#hotCardGrid .hot-card');
+      const noResults = document.getElementById('hotNoResults');
+      const updateItems = document.querySelectorAll('#latest .update-item');
+
+      function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) {
+          hotCards.forEach(card => card.style.display = '');
+          updateItems.forEach(item => item.style.display = '');
+          noResults.style.display = 'none';
+          return;
+        }
+
+        let visibleCount = 0;
+        hotCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        updateItems.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = text.includes(query) ? '' : 'none';
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') performSearch();
+      });
+
+      // 左栏筛选功能
+      const filterTags = document.querySelectorAll('#filterTags .filter-tag');
+      const allHotCards = document.querySelectorAll('#hotCardGrid .hot-card');
+
+      filterTags.forEach(tag => {
+        tag.addEventListener('click', function() {
+          filterTags.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+
+          let visible = 0;
+          allHotCards.forEach(card => {
+            const category = card.dataset.category || '';
+            if (filter === 'all' || category === filter) {
+              card.style.display = '';
+              visible++;
+            } else {
+              card.style.display = 'none';
+            }
+          });
+          noResults.style.display = visible === 0 ? 'block' : 'none';
+        });
+      });
+
+      // 分类入口点击筛选（与左栏筛选联动）
+      document.querySelectorAll('.category-item').forEach(item => {
+        item.addEventListener('click', function() {
+          const cat = this.dataset.category;
+          if (!cat) return;
+          // 触发对应筛选标签
+          filterTags.forEach(tag => {
+            if (tag.dataset.filter === cat) {
+              tag.click();
+            }
+          });
+          // 滚动到热门推荐区
+          document.getElementById('hot').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
+</body>
+      </html>
